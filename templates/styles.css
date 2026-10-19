@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f1f6;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #24242b;
+}
+
+.email-wrap {
+  background-color: #f2f1f6;
+  padding: 32px 16px;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e3ee;
+}
+
+.header {
+  padding: 28px 32px 20px;
+  border-bottom: 1px solid #e5e3ee;
+}
+
+.header-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #4f3f9e;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.header-date {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #77758a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.intro {
+  padding: 22px 32px 4px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #45435a;
+}
+
+.intro a {
+  color: #4f3f9e;
+}
+
+.section {
+  padding: 26px 32px;
+  border-bottom: 1px solid #ece9f5;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4f3f9e;
+}
+
+.article {
+  padding: 14px 0;
+  border-top: 1px solid #f0eef8;
+}
+
+.article:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.article-title {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1c1b26;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.article-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5c5a70;
+}
+
+.sponsor {
+  background-color: #f7f6fc;
+  border: 1px solid #e4e1f2;
+  border-left: 3px solid #4f3f9e;
+  border-radius: 6px;
+  padding: 18px 20px;
+}
+
+.sponsor-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4f3f9e;
+  margin-bottom: 8px;
+}
+
+.sponsor-title {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1c1b26;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.sponsor-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5c5a70;
+}
+
+.jobs-box {
+  background-color: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #45435a;
+}
+
+.jobs-box a {
+  color: #4f3f9e;
+}
+
+.footer {
+  padding: 22px 32px 30px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #9795a8;
+}
+
+.footer a {
+  color: #7a78a0;
+}
+
+a {
+  color: #4f3f9e;
+}

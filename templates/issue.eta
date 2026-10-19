@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHP Weekly &mdash; <%= it.date %></title>
+<style><%~ it.css %></style>
+</head>
+<body>
+<div class="email-wrap">
+  <div class="container">
+    <div class="header">
+      <a class="header-title" href="<%= it.sourceUrl %>">PHP Weekly</a>
+      <div class="header-date"><%= it.date %></div>
+    </div>
+
+    <% if (it.intro) { %>
+    <div class="intro"><%~ it.intro %></div>
+    <% } %>
+
+    <% it.sections.forEach(function(section) { %>
+      <% if (section.type === "sponsor") { %>
+      <div class="section">
+        <div class="sponsor">
+          <span class="sponsor-eyebrow">Sponsor</span>
+          <% section.items.forEach(function(item) { %>
+          <a class="sponsor-title" href="<%= item.url %>"><%= item.title %></a>
+          <p class="sponsor-desc"><%= item.description %></p>
+          <% }) %>
+        </div>
+      </div>
+      <% } else if (section.type === "jobs") { %>
+      <div class="section">
+        <h2 class="section-title"><%= section.title %></h2>
+        <div class="jobs-box"><%~ section.html %></div>
+      </div>
+      <% } else { %>
+      <div class="section">
+        <h2 class="section-title"><%= section.title %></h2>
+        <% section.items.forEach(function(item) { %>
+        <div class="article">
+          <a class="article-title" href="<%= item.url %>"><%= item.title %></a>
+          <p class="article-desc"><%= item.description %></p>
+        </div>
+        <% }) %>
+      </div>
+      <% } %>
+    <% }) %>
+
+    <div class="footer">
+      Reformatted from the original <a href="<%= it.sourceUrl %>">PHP Weekly issue</a>, <%= it.date %>.<br>
+      Sent to you automatically &mdash; not affiliated with PHP Weekly.
+    </div>
+  </div>
+</div>
+</body>
+</html>
